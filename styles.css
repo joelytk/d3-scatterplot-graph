@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
+    'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+body {
+  background-color: #333;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.75),
+      rgba(0, 0, 0, 0.75)
+    ),
+    url('https://uk.bike-oisans.com/wp-content/uploads/sites/4/2021/01/6994_oisans_col_series-2000px-1200x800.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+dt {
+  font-weight: 700;
+}
+
+dt,
+dd {
+  display: inline-block;
+}
+
+#title,
+#description {
+  text-align: center;
+}
+
+#title {
+  margin-bottom: 0.5rem;
+}
+
+#description {
+  opacity: 0.65;
+  font-size: 1rem;
+  margin-bottom: 4rem;
+}
+
+.container {
+  max-width: 1140px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+#scatterplot-graph-container {
+  text-align: center;
+  overflow-x: auto;
+}
+
+#tooltip {
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #121212;
+  transition: opacity 0.3s;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+#tooltip:after {
+  content: '';
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.tooltip-top:after {
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-color: rgba(255, 255, 255, 0.85) transparent transparent transparent;
+}
+
+.tooltip-left:after {
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  border-color: transparent transparent transparent rgba(255, 255, 255, 0.85);
+}
